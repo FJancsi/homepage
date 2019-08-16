@@ -13,12 +13,9 @@ jobs:
     - stage: lint
       name: "Linter check"
       script: npm run lint
-    - stage: build
-      name: "Build assets"
-      script: npm run build
     - stage: deploy
       name: "Deploy to Firebase"
-      script: skip
+      script: npm run build
       deploy:
         skip_cleanup: true
         provider: firebase
