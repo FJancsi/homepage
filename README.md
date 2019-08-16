@@ -1,4 +1,5 @@
 # homepage
+[![Build Status](https://travis-ci.org/FJancsi/homepage.svg?branch=master)](https://travis-ci.org/FJancsi/homepage)
 
 ## Project setup
 ```
