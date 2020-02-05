@@ -2,19 +2,18 @@
   <div id="app">
     <Header></Header>
     <router-view/>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>

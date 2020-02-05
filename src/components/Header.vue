@@ -1,18 +1,30 @@
 <template>
-    <nav class="header-nav">
-        <a href="https://github.com/FJancsi">GitHub</a> |
-        <a href="https://twitter.com/pufilekvar">Twitter</a> |
-        <a href="https://www.linkedin.com/in/jános-fekete-639278114">LinkedIn</a>
-    </nav>
+    <div class="header">
+        <nav class="header-nav">
+            <a href="https://github.com/FJancsi">GitHub</a> |
+            <a href="https://www.npmjs.com/~fjancsi">NPM</a> |
+            <a href="https://twitter.com/pufilekvar">Twitter</a> |
+            <a href="https://www.linkedin.com/in/jános-fekete-639278114">LinkedIn</a>
+        </nav>
+        <img alt="page logo" class="home-page_logo" src="../assets/logo.png" />
+        <div id="nav">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/about">About</router-link>
+        </div>
+    </div>
 </template>
 
 <style>
-.header-nav {
+.header .header-nav {
     text-align: right;
     margin: 5px;
 }
-.header-nav a {
+.header .header-nav a {
     text-decoration: none;
     margin: 5px;
+}
+.header .home-page_logo {
+  width: 200px;
+  height: 200px;
 }
 </style>
