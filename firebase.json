@@ -15,7 +15,7 @@
   },
   "functions": {
     "predeploy": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint"
+      "npm install && npm --prefix \"$RESOURCE_DIR\" run lint"
     ]
   }
 }
