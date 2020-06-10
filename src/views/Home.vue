@@ -1,9 +1,15 @@
 <template>
   <div class="home-page">
-    <h1>Welcome friend!</h1>
+    <h1>Welcome {{user || 'friend'}} !</h1>
   </div>
 </template>
 
-<style>
+<script>
+export default {
+  name: "home",
+  props: ["user"]
+};
+</script>
 
+<style>
 </style>

@@ -6,10 +6,12 @@
             <a href="https://twitter.com/pufilekvar">Twitter</a> |
             <a href="https://www.linkedin.com/in/jános-fekete-639278114">LinkedIn</a>
         </nav>
-        <img alt="page logo" class="home-page_logo" src="../assets/logo.png" />
+        <router-link to="/">
+                <img alt="page logo" class="home-page_logo" src="../assets/logo.png" />
+        </router-link>
         <div id="nav">
-            <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link>
+            <router-link to="/about">About</router-link> |
+            <router-link to="/login">Login</router-link>
         </div>
     </div>
 </template>
