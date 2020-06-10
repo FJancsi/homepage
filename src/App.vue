@@ -10,6 +10,7 @@
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import Firebase from "firebase";
+import db from "./services/db.js";
 
 export default {
   name: "app",
