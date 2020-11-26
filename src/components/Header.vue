@@ -10,8 +10,7 @@
                 <img alt="page logo" class="home-page_logo" src="../assets/logo.png" />
         </router-link>
         <div id="nav">
-            <router-link to="/about">About</router-link> |
-            <router-link to="/login">Login</router-link>
+            <router-link to="/about">About</router-link>
         </div>
     </div>
 </template>

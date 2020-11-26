@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header></Header>
-    <router-view :user="user" />
+    <router-view/>
     <Footer></Footer>
   </div>
 </template>
@@ -9,29 +9,9 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import Firebase from "firebase";
-import db from "./services/db.js";
 
 export default {
   name: "app",
-  data: function() {
-    return {
-      user: null
-    };
-  },
-  mounted() {
-    Firebase.auth().onAuthStateChanged(user => {
-      if (user) {
-        this.user = user.email;
-      }
-    });
-    db.collection("users")
-      .doc("5krPDMZB0RMCwoKezu75")
-      .get()
-      .then(snapshot => {
-        this.user = snapshot.data().name;
-      });
-  },
   components: {
     Header,
     Footer
