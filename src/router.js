@@ -12,9 +12,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('./views/About.vue')
+      path: '/gps',
+      name: 'gps',
+      component: () => import('./views/GPS.vue')
     },
     {
       path: '*',
