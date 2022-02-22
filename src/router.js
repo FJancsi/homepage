@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import HomeView from './views/HomeView.vue'
 
 Vue.use(Router)
 
@@ -9,12 +9,12 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: HomeView
     },
     {
       path: '/gps',
       name: 'gps',
-      component: () => import('./views/GPS.vue')
+      component: () => import('./views/GPSView.vue')
     },
     {
       path: '*',
