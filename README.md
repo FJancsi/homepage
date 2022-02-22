@@ -1,5 +1,4 @@
 # homepage
-[![Build Status](https://travis-ci.org/FJancsi/homepage.svg?branch=master)](https://travis-ci.org/FJancsi/homepage)
 [![Known Vulnerabilities](https://snyk.io//test/github/FJancsi/homepage/badge.svg?targetFile=package.json)](https://snyk.io//test/github/FJancsi/homepage?targetFile=package.json)
 
 
